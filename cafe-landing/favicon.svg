@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <title>UOY CAFÉ</title>
+  <rect width="100" height="100" rx="22" fill="#2B1810"/>
+  <text
+    x="50" y="72"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', 'Playfair Display', serif"
+    font-size="64"
+    font-weight="700"
+    letter-spacing="-2"
+    fill="#F5EEDC">U</text>
+  <circle cx="74" cy="26" r="4" fill="#C4623B"/>
+</svg>
