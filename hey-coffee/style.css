@@ -12,8 +12,9 @@
   --gray-600:   #555555;
   --black:      #0F0F0F;
   --black-soft: #1F1F1F;
-  --accent:     #0172FE;  /* brand blue */
-  --accent-dk:  #0058CC;
+  --accent:     #FFCC00;  /* brand yellow */
+  --accent-dk:  #F2B900;
+  --accent-ink: #0F0F0F;  /* text color for use on yellow fills */
   --red:        #E60012;
   --border:     #E5E5E5;
 
@@ -199,10 +200,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: none;
   padding: 0.6rem 1.2rem;
   background: var(--accent);
-  color: var(--white);
+  color: var(--accent-ink);
   font-family: var(--ff-ko);
   font-weight: 700;
   font-size: 0.85rem;
+  border: 2px solid var(--black);
 }
 .btn-order:hover { background: var(--accent-dk); }
 
@@ -281,16 +283,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @keyframes blink { 50% { opacity: 0.35; transform: scale(0.85); } }
 
 .display .accent {
-  color: var(--accent);
+  color: var(--accent-ink);
   position: relative;
+  display: inline-block;
+  isolation: isolate;
 }
 .display .accent::after {
   content: "";
   position: absolute;
-  left: 0; right: 0; bottom: 8%;
-  height: 16%;
+  left: -0.1em; right: -0.1em; bottom: 6%;
+  height: 32%;
   background: var(--accent);
-  opacity: 0.18;
   z-index: -1;
 }
 
@@ -314,7 +317,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   right: -12px;
   bottom: -12px;
   background: var(--accent);
-  color: var(--white);
+  color: var(--accent-ink);
   padding: 1rem 1.5rem;
   border: 2px solid var(--black);
   display: grid;
@@ -428,8 +431,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .event-card .event-period {
   font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-weight: 700;
+  color: var(--red);
 }
 .event-card .event-desc {
   font-size: 0.9rem;
@@ -446,7 +449,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   letter-spacing: 0.1em;
 }
 .tag-hot  { background: var(--red);    color: var(--white); }
-.tag-new  { background: var(--accent); color: var(--white); }
+.tag-new  { background: var(--accent); color: var(--accent-ink); }
 .tag-app  { background: var(--black);  color: var(--white); }
 
 /* ===== Menu ===== */
@@ -526,7 +529,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   letter-spacing: 0.12em;
   color: var(--white);
 }
-.badge-best   { background: var(--accent); }
+.badge-best   { background: var(--accent); color: var(--accent-ink); }
 .badge-new    { background: var(--red); }
 .badge-hot    { background: var(--red); }
 .badge-season { background: var(--black); }
@@ -614,10 +617,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-family: var(--ff-display);
   font-size: 0.6rem;
   letter-spacing: 0.1em;
-  color: var(--white);
+  color: var(--accent-ink);
   background: var(--accent);
 }
-.flag-hot { background: var(--red); }
+.flag-hot { background: var(--red); color: var(--white); }
 .store-addr {
   font-size: 0.88rem;
   color: var(--gray-600);
@@ -650,7 +653,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .franchise .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: var(--white);
+  color: var(--accent-ink);
   box-shadow: 4px 4px 0 0 var(--white);
 }
 .franchise .btn-primary:hover { box-shadow: 6px 6px 0 0 var(--white); }
