@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UOY CAFÉ — A quiet place, for good coffee.</title>
+  <meta name="description" content="서울 성수동의 작은 카페. 느린 아침, 좋은 원두, 단단한 한 잔." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#" class="logo">UOY<span>CAFÉ</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <a href="#order" class="btn btn-primary nav-cta">Order</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">EST. 2024 · SEOUL</p>
+          <h1 class="display">A quiet place,<br/>for good coffee.</h1>
+          <p class="lead">
+            느린 아침, 좋은 원두, 단단한 한 잔.<br/>
+            하루를 천천히 시작하는 브랜드 유위의 공간입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#order" class="btn btn-primary">Order Online</a>
+            <a href="#menu" class="btn btn-ghost">View Menu →</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=80&auto=format&fit=crop"
+            alt="Latte art in a ceramic cup"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="story">
+      <div class="about-inner">
+        <div class="about-media">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&auto=format&fit=crop"
+            alt="Warm cafe interior"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">OUR STORY</p>
+          <h2 class="h2">한 잔에 담긴<br/>동네의 리듬.</h2>
+          <p class="body">
+            2024년, 서울 성수동 골목 끝에서 시작된 작은 카페.
+            우리는 원두의 산지부터 한 잔의 온도까지,
+            모든 과정에 리듬을 담아 내립니다.
+          </p>
+          <p class="body">
+            오래 머무르셔도 좋고,
+            잠시 쉬어가셔도 좋습니다.
+          </p>
+          <a href="#journal" class="link-accent">Read our journal →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <div class="section-header">
+        <p class="eyebrow">MENU</p>
+        <h2 class="h2">무엇을 내려드릴까요?</h2>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="메뉴 카테고리">
+        <button class="menu-tab is-active" role="tab" data-cat="beverage" aria-selected="true" aria-controls="panel-beverage">
+          <span class="ko">음료</span><span class="en">Beverage</span>
+        </button>
+        <button class="menu-tab" role="tab" data-cat="food" aria-selected="false" aria-controls="panel-food">
+          <span class="ko">푸드</span><span class="en">Food</span>
+        </button>
+      </div>
+
+      <!-- 음료 -->
+      <div class="menu-panel is-active" id="panel-beverage" data-cat="beverage" role="tabpanel">
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">시그니처</p>
+              <div class="menu-card-head"><h3>Signature Blend Latte</h3><span class="price">₩ 6,500</span></div>
+              <p>진한 초콜릿 향의 하우스 블렌드 라떼.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">시그니처</p>
+              <div class="menu-card-head"><h3>Slow Cold Brew</h3><span class="price">₩ 6,000</span></div>
+              <p>18시간 저온 드립한 부드러운 한 잔.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">시그니처</p>
+              <div class="menu-card-head"><h3>Hand Drip of the Day</h3><span class="price">₩ 7,000</span></div>
+              <p>바리스타 추천 싱글 오리진.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">시그니처</p>
+              <div class="menu-card-head"><h3>Seoul Einspänner</h3><span class="price">₩ 6,800</span></div>
+              <p>진한 에스프레소 위 부드러운 크림.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">에스프레소</p>
+              <div class="menu-card-head"><h3>Americano</h3><span class="price">₩ 4,500</span></div>
+              <p>하우스 블렌드 더블샷 + 정수.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">에스프레소</p>
+              <div class="menu-card-head"><h3>Cappuccino</h3><span class="price">₩ 5,500</span></div>
+              <p>벨벳 같은 스팀 밀크 폼.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">논커피</p>
+              <div class="menu-card-head"><h3>Matcha Field Latte</h3><span class="price">₩ 7,200</span></div>
+              <p>우지산 말차 + 유기농 귀리 우유.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">논커피</p>
+              <div class="menu-card-head"><h3>Peach Oolong Tea</h3><span class="price">₩ 6,500</span></div>
+              <p>대만 우롱 위 복숭아 시럽 한 방울.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- 푸드 -->
+      <div class="menu-panel" id="panel-food" data-cat="food" role="tabpanel" hidden>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">베이커리</p>
+              <div class="menu-card-head"><h3>Butter Croissant</h3><span class="price">₩ 4,800</span></div>
+              <p>매일 아침 구워낸 프렌치 버터 크로와상.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1623334044303-241021148842?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">베이커리</p>
+              <div class="menu-card-head"><h3>Pain au Chocolat</h3><span class="price">₩ 5,500</span></div>
+              <p>프렌치 버터 페이스트리 + 다크 초콜릿.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">베이커리</p>
+              <div class="menu-card-head"><h3>Almond Financier</h3><span class="price">₩ 3,800</span></div>
+              <p>구운 아몬드 가루의 진한 풍미.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">브런치</p>
+              <div class="menu-card-head"><h3>Avocado Toast</h3><span class="price">₩ 9,800</span></div>
+              <p>구운 사워도우 + 아보카도 + 반숙란.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1481070555726-e2fe8357725c?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">브런치</p>
+              <div class="menu-card-head"><h3>Cheese Sandwich</h3><span class="price">₩ 8,500</span></div>
+              <p>그뤼에르·에멘탈 치즈를 녹여낸 토스트.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-img" style="background-image:url('https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80&auto=format&fit=crop');"></div>
+            <div class="menu-card-body">
+              <p class="menu-tag">시즌</p>
+              <div class="menu-card-head"><h3>Seasonal Scone</h3><span class="price">₩ 4,200</span></div>
+              <p>매주 바뀌는 시즌 스콘.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#story">About</a></li>
+          <li aria-current="page">오시는 길</li>
+        </ol>
+      </nav>
+
+      <header class="visit-header">
+        <p class="eyebrow">LOCATION</p>
+        <h2 class="visit-title">
+          UOY CAFÉ<br/>
+          <span>Seongsu Flagship</span>
+        </h2>
+      </header>
+
+      <div class="visit-grid">
+        <div class="map-wrap">
+          <iframe
+            class="map-embed"
+            src="https://maps.google.com/maps?q=%EC%84%B1%EC%88%98%EB%8F%99&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="UOY CAFÉ 지도"
+          ></iframe>
+          <div class="map-cta">
+            <a class="map-btn" href="https://map.naver.com/" target="_blank" rel="noopener">
+              <span>네이버 지도</span>
+              <span class="arrow">↗</span>
+            </a>
+            <a class="map-btn" href="https://map.kakao.com/" target="_blank" rel="noopener">
+              <span>카카오 지도</span>
+              <span class="arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="visit-info">
+          <dl class="info-table">
+            <div>
+              <dt>Address</dt>
+              <dd>
+                <span class="ko">서울특별시 성동구 성수이로 00-00 UOY빌딩 1F</span>
+                <span class="en">1F, 00-00 Seongsui-ro, Seongdong-gu,<br/>Seoul, Republic of Korea</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>
+                <div class="time-row"><span>Mon – Fri</span><span>08:00 – 21:00</span></div>
+                <div class="time-row"><span>Sat – Sun</span><span>10:00 – 20:00</span></div>
+                <div class="time-row muted"><span>Last Order</span><span>마감 30분 전</span></div>
+              </dd>
+            </div>
+            <div>
+              <dt>Closed</dt>
+              <dd>매월 첫째·셋째 월요일</dd>
+            </div>
+            <div>
+              <dt>Tel</dt>
+              <dd><a href="tel:+82212345678">02 - 1234 - 5678</a></dd>
+            </div>
+            <div>
+              <dt>Instagram</dt>
+              <dd><a href="#" target="_blank" rel="noopener">@uoy.cafe ↗</a></dd>
+            </div>
+          </dl>
+
+          <div class="transit">
+            <p class="transit-head">대중교통</p>
+            <ul>
+              <li><span class="line line-2">2</span> 성수역 3번 출구에서 도보 4분</li>
+              <li><span class="line bus">BUS</span> 성수동 정류장 · 2224 · 2412 · 2014</li>
+              <li><span class="line parking">P</span> 전용 주차 없음 · 공영주차장 도보 3분</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="logo">UOY<span>CAFÉ</span></p>
+        <p class="footer-tagline">느리게, 정성스럽게.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <p class="eyebrow faint">EXPLORE</p>
+          <ul>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="#journal">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow faint">FOLLOW</p>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Kakao Channel</a></li>
+            <li><a href="#">Naver Place</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="footer-bottom">© 2026 &nbsp; Brand UOY. All rights reserved. &nbsp;·&nbsp; Made with care in Seoul.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    // Close menu when a link is tapped
+    document.querySelectorAll('.nav-links a').forEach(a =>
+      a.addEventListener('click', () => nav.classList.remove('is-open'))
+    );
+
+    // Menu category tabs
+    const tabs = document.querySelectorAll('.menu-tab');
+    const panels = document.querySelectorAll('.menu-panel');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const cat = tab.dataset.cat;
+        tabs.forEach(t => {
+          const active = t.dataset.cat === cat;
+          t.classList.toggle('is-active', active);
+          t.setAttribute('aria-selected', active);
+        });
+        panels.forEach(p => {
+          const active = p.dataset.cat === cat;
+          p.classList.toggle('is-active', active);
+          p.hidden = !active;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
