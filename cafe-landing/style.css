@@ -342,9 +342,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .menu-card-img {
   aspect-ratio: 4/3;
   background-color: var(--espresso);
+  background-image: linear-gradient(135deg, #3a2318 0%, #2B1810 55%, #1a0e08 100%);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
+/* When inline background-image (Unsplash URL) is present, it overrides gradient.
+   If the external image fails, the gradient shows through as a graceful fallback. */
 .menu-card-body { padding: 1.25rem 1.5rem 1.5rem; display: grid; gap: 0.4rem; }
 .menu-tag {
   display: inline-block;
