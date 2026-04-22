@@ -1,0 +1,48 @@
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 편집기 / IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === 민감 정보 (절대 커밋 금지) ===
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials.json
+*.credentials
+api_keys.txt
+tokens.txt
+
+# === 개인정보·거래 데이터 ===
+# 실제 고객/거래처 데이터가 담긴 파일은 커밋 전 반드시 검토
+customers_*.csv
+orders_*.csv
+suppliers_real.csv
+
+# === 빌드 산출물 ===
+node_modules/
+dist/
+build/
+out/
+.next/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# === 로그 ===
+*.log
+logs/
+
+# === 임시 파일 ===
+*.tmp
+*.temp
+tmp/
+temp/
