@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEY COFFEE — 매일 한 잔, 가볍게.</title>
+  <meta name="description" content="전국 1,500호점 · 아메리카노 1,500원부터 · 오늘도 헤이커피." />
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0F0F0F" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#">
+      <span class="logo-mark">H</span>
+      <span class="logo-text">HEY<em>COFFEE</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#menu">MENU</a>
+      <a href="#event">EVENT</a>
+      <a href="#store">STORE</a>
+      <a href="#franchise">FRANCHISE</a>
+    </nav>
+    <a href="#order" class="btn-order">주문하기</a>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="event-badge">
+            <span class="dot"></span>
+            TODAY EVENT · 아메리카노 1+1
+          </span>
+          <h1 class="display">
+            매일 한 잔,<br/>
+            <span class="accent">가볍게.</span>
+          </h1>
+          <p class="lead">
+            아메리카노 1,500원부터. <br/>
+            하루 한 잔, 헤이커피.
+          </p>
+          <div class="hero-cta">
+            <a href="#order" class="btn btn-primary">앱으로 주문 →</a>
+            <a href="#store" class="btn btn-ghost">매장 찾기</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="media-frame">
+            <img
+              src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=900&q=80&auto=format&fit=crop&crop=entropy"
+              alt="아메리카노"
+              loading="eager"
+            />
+          </div>
+          <div class="price-tag">
+            <span class="price-label">HOUSE AMERICANO</span>
+            <span class="price-num">₩ 1,500</span>
+            <span class="price-note">Hot / Ice 동일</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="브랜드 지표">
+      <ul>
+        <li><strong>1,500<em>+</em></strong><span>전국 매장</span></li>
+        <li><strong>200<em>만+</em></strong><span>앱 회원</span></li>
+        <li><strong>50<em>만+</em></strong><span>매일 판매 잔 수</span></li>
+        <li><strong>2018</strong><span>EST.</span></li>
+      </ul>
+    </section>
+
+    <!-- EVENT -->
+    <section class="event" id="event">
+      <div class="section-head">
+        <p class="eyebrow">EVENT</p>
+        <h2 class="h2">이번 달 혜택.</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <span class="tag tag-hot">HOT</span>
+          <p class="event-num">01</p>
+          <h3>아메리카노 1+1</h3>
+          <p class="event-period">평일 15:00 – 17:00</p>
+          <p class="event-desc">오후 피크 타임 한정, 매일 진행되는 대표 혜택.</p>
+        </article>
+        <article class="event-card">
+          <span class="tag tag-new">NEW</span>
+          <p class="event-num">02</p>
+          <h3>돌체라떼 출시</h3>
+          <p class="event-period">2026.04 신메뉴</p>
+          <p class="event-desc">진한 연유의 부드러움. 첫 주문 20% 할인.</p>
+        </article>
+        <article class="event-card">
+          <span class="tag tag-app">APP</span>
+          <p class="event-num">03</p>
+          <h3>앱 가입 혜택</h3>
+          <p class="event-period">상시 진행</p>
+          <p class="event-desc">첫 주문 50% 할인 + 쿠폰 5장 즉시 지급.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <p class="eyebrow">MENU</p>
+        <h2 class="h2">오늘, 뭘 마시지?</h2>
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab is-active" role="tab" data-cat="beverage" aria-selected="true">음료<span>BEVERAGE</span></button>
+        <button class="menu-tab" role="tab" data-cat="food" aria-selected="false">푸드<span>FOOD</span></button>
+      </div>
+
+      <div class="menu-panel is-active" data-cat="beverage">
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&q=80&auto=format&fit=crop&crop=entropy');">
+              <span class="badge badge-best">BEST</span>
+            </div>
+            <div class="menu-body">
+              <h3>아메리카노</h3>
+              <p class="sub">Americano</p>
+              <div class="price-row"><span>₩ 1,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>카페라떼</h3>
+              <p class="sub">Cafe Latte</p>
+              <div class="price-row"><span>₩ 2,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1557006021-55b2833ad91d?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>바닐라라떼</h3>
+              <p class="sub">Vanilla Latte</p>
+              <div class="price-row"><span>₩ 2,800</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1572286258217-215fa1c50c07?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>카라멜 마끼아또</h3>
+              <p class="sub">Caramel Macchiato</p>
+              <div class="price-row"><span>₩ 3,200</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&auto=format&fit=crop&crop=entropy');">
+              <span class="badge badge-new">NEW</span>
+            </div>
+            <div class="menu-body">
+              <h3>돌체라떼</h3>
+              <p class="sub">Dolce Latte</p>
+              <div class="price-row"><span>₩ 3,200</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1553787499-6f9133860278?w=600&q=80&auto=format&fit=crop&crop=entropy');">
+              <span class="badge badge-season">SEASON</span>
+            </div>
+            <div class="menu-body">
+              <h3>딸기라떼</h3>
+              <p class="sub">Strawberry Latte</p>
+              <div class="price-row"><span>₩ 3,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1557142046-c704a3adf364?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>망고스무디</h3>
+              <p class="sub">Mango Smoothie</p>
+              <div class="price-row"><span>₩ 3,800</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>얼그레이 티</h3>
+              <p class="sub">Earl Grey Tea</p>
+              <div class="price-row"><span>₩ 2,800</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="menu-panel" data-cat="food" hidden>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80&auto=format&fit=crop&crop=entropy');">
+              <span class="badge badge-hot">HOT</span>
+            </div>
+            <div class="menu-body">
+              <h3>크로플</h3>
+              <p class="sub">Croffle</p>
+              <div class="price-row"><span>₩ 3,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>에그타르트</h3>
+              <p class="sub">Egg Tart</p>
+              <div class="price-row"><span>₩ 2,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>크림치즈 베이글</h3>
+              <p class="sub">Cream Cheese Bagel</p>
+              <div class="price-row"><span>₩ 3,800</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>프렌치 토스트</h3>
+              <p class="sub">French Toast</p>
+              <div class="price-row"><span>₩ 4,500</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1568471173242-461f0a730452?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>레드벨벳 쿠키</h3>
+              <p class="sub">Red Velvet Cookie</p>
+              <div class="price-row"><span>₩ 2,000</span></div>
+            </div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=600&q=80&auto=format&fit=crop&crop=entropy');"></div>
+            <div class="menu-body">
+              <h3>뉴욕 치즈케익</h3>
+              <p class="sub">NY Cheesecake</p>
+              <div class="price-row"><span>₩ 4,200</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORE -->
+    <section class="store" id="store">
+      <div class="section-head">
+        <p class="eyebrow">STORE</p>
+        <h2 class="h2">전국 1,500호점.</h2>
+        <p class="sub-lead">가까운 매장을 찾아보세요. 전국 어디서나 같은 가격, 같은 한 잔.</p>
+      </div>
+
+      <div class="store-grid">
+        <div class="store-map">
+          <iframe
+            src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="HEY COFFEE 매장 지도"
+          ></iframe>
+          <div class="store-map-cta">
+            <a href="#" class="chip-link">전체 매장 보기 →</a>
+          </div>
+        </div>
+
+        <ul class="store-list">
+          <li>
+            <div class="store-name">성수점 <span class="flag">NEW</span></div>
+            <div class="store-addr">서울 성동구 성수이로 00-00</div>
+            <div class="store-meta"><span>08:00 – 22:00</span><span>·</span><span>드라이브스루</span></div>
+          </li>
+          <li>
+            <div class="store-name">홍대입구점</div>
+            <div class="store-addr">서울 마포구 양화로 00</div>
+            <div class="store-meta"><span>08:00 – 23:00</span><span>·</span><span>24시간 앱주문</span></div>
+          </li>
+          <li>
+            <div class="store-name">강남역점 <span class="flag flag-hot">HOT</span></div>
+            <div class="store-addr">서울 강남구 강남대로 00-0</div>
+            <div class="store-meta"><span>07:00 – 23:00</span><span>·</span><span>24/7</span></div>
+          </li>
+          <li>
+            <div class="store-name">부산 서면점</div>
+            <div class="store-addr">부산 부산진구 중앙대로 0000</div>
+            <div class="store-meta"><span>07:30 – 22:30</span></div>
+          </li>
+          <li>
+            <div class="store-name">대구 동성로점</div>
+            <div class="store-addr">대구 중구 동성로 00-0</div>
+            <div class="store-meta"><span>08:00 – 22:00</span></div>
+          </li>
+          <li>
+            <div class="store-name">인천 송도점</div>
+            <div class="store-addr">인천 연수구 센트럴로 00</div>
+            <div class="store-meta"><span>08:00 – 22:00</span><span>·</span><span>드라이브스루</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FRANCHISE -->
+    <section class="franchise" id="franchise">
+      <div class="franchise-inner">
+        <div>
+          <p class="eyebrow light">FRANCHISE</p>
+          <h2 class="h2 light">함께 성장할 가맹점주님을 찾습니다.</h2>
+          <p class="lead light">초기 창업비 합리적 · 본사 일괄 물류 · 24개월 영업 지원.</p>
+        </div>
+        <a href="#" class="btn btn-primary btn-xl">가맹 문의하기 →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="logo-text">HEY<em>COFFEE</em></p>
+        <p class="footer-tagline">매일 한 잔, 가볍게.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <p class="eyebrow faint">EXPLORE</p>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#event">Event</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#franchise">Franchise</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow faint">CONTACT</p>
+          <ul>
+            <li>고객센터 1588 - 0000</li>
+            <li>가맹문의 1588 - 0001</li>
+            <li>평일 09:00 – 18:00</li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow faint">FOLLOW</p>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Kakao Channel</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <small>(주)HEY COFFEE · 대표 홍길동 · 사업자등록번호 000-00-00000 · 서울특별시 00구 00로 00</small>
+      <small>© 2026 HEY COFFEE Co., Ltd. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const nav = document.getElementById('nav');
+    const toggle = document.querySelector('.nav-toggle');
+    toggle.addEventListener('click', () => nav.classList.toggle('is-open'));
+    document.querySelectorAll('.nav-links a').forEach(a =>
+      a.addEventListener('click', () => nav.classList.remove('is-open'))
+    );
+
+    // Image fallback
+    document.querySelectorAll('.menu-img, .hero-media .media-frame img').forEach(el => {
+      const isBg = el.classList.contains('menu-img');
+      if (isBg) {
+        const m = el.style.backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+        if (!m) return;
+        const probe = new Image();
+        probe.onerror = () => {
+          el.style.backgroundImage = 'linear-gradient(135deg, #1a1a1a, #0F0F0F)';
+          el.style.backgroundColor = '#0F0F0F';
+        };
+        probe.src = m[1];
+      } else {
+        el.addEventListener('error', () => {
+          el.style.background = '#0F0F0F';
+          el.style.opacity = '0.6';
+        });
+      }
+    });
+
+    // Tabs
+    const tabs = document.querySelectorAll('.menu-tab');
+    const panels = document.querySelectorAll('.menu-panel');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const cat = tab.dataset.cat;
+        tabs.forEach(t => {
+          const active = t.dataset.cat === cat;
+          t.classList.toggle('is-active', active);
+          t.setAttribute('aria-selected', active);
+        });
+        panels.forEach(p => {
+          const active = p.dataset.cat === cat;
+          p.classList.toggle('is-active', active);
+          p.hidden = !active;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
