@@ -12,8 +12,8 @@
   --gray-600:   #555555;
   --black:      #0F0F0F;
   --black-soft: #1F1F1F;
-  --accent:     #FF5A00;  /* hot orange */
-  --accent-dk:  #E64B00;
+  --accent:     #0172FE;  /* brand blue */
+  --accent-dk:  #0058CC;
   --red:        #E60012;
   --border:     #E5E5E5;
 
@@ -274,7 +274,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .event-badge .dot {
   width: 8px; height: 8px;
-  background: var(--accent);
+  background: var(--red);
   border-radius: 50%;
   animation: blink 1.8s ease-in-out infinite;
 }
