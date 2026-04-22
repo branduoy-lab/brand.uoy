@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280" role="img" aria-label="피쉬콜라겐 일러스트">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0f7f1"/>
+      <stop offset="1" stop-color="#e3efe4"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" fill="url(#cbg)"/>
+
+  <!-- water waves -->
+  <path d="M0 220 Q 60 200, 120 220 T 240 220 T 360 220 T 480 220 V280 H0 Z" fill="#3e803f" fill-opacity=".10"/>
+  <path d="M0 240 Q 60 220, 120 240 T 240 240 T 360 240 T 480 240 V280 H0 Z" fill="#3e803f" fill-opacity=".18"/>
+  <path d="M0 260 Q 60 245, 120 260 T 240 260 T 360 260 T 480 260 V280 H0 Z" fill="#3e803f" fill-opacity=".26"/>
+
+  <!-- fish silhouette -->
+  <g transform="translate(120,90)">
+    <path d="M0 50 Q 40 0, 130 30 Q 170 50, 130 70 Q 40 100, 0 50 Z" fill="#3e803f" opacity=".90"/>
+    <!-- tail -->
+    <path d="M130 30 L 175 10 L 165 50 L 175 90 L 130 70 Z" fill="#336b34"/>
+    <!-- eye -->
+    <circle cx="35" cy="44" r="5" fill="#ffffff"/>
+    <circle cx="36" cy="44" r="2.4" fill="#1a3d1a"/>
+    <!-- gill -->
+    <path d="M58 30 Q 70 50, 58 70" fill="none" stroke="#ffffff" stroke-width="1.5" opacity=".55"/>
+    <!-- scales -->
+    <g fill="none" stroke="#ffffff" stroke-width="1" opacity=".35">
+      <path d="M75 40 q 6 -6 12 0"/>
+      <path d="M90 38 q 6 -6 12 0"/>
+      <path d="M105 38 q 6 -6 12 0"/>
+      <path d="M82 60 q 6 -6 12 0"/>
+      <path d="M97 60 q 6 -6 12 0"/>
+    </g>
+  </g>
+
+  <!-- molecule chain -->
+  <g transform="translate(310,60)" stroke="#3e803f" stroke-width="2" fill="#ffffff">
+    <line x1="0" y1="20" x2="22" y2="40" stroke-width="2"/>
+    <line x1="22" y1="40" x2="22" y2="66" stroke-width="2"/>
+    <line x1="22" y1="66" x2="46" y2="80" stroke-width="2"/>
+    <line x1="46" y1="80" x2="68" y2="66" stroke-width="2"/>
+    <line x1="68" y1="66" x2="68" y2="40" stroke-width="2"/>
+    <line x1="46" y1="22" x2="68" y2="40" stroke-width="2"/>
+    <line x1="22" y1="40" x2="46" y2="22" stroke-width="2"/>
+    <line x1="46" y1="80" x2="46" y2="106" stroke-width="2"/>
+    <circle cx="0"  cy="20"  r="6"/>
+    <circle cx="22" cy="40"  r="6"/>
+    <circle cx="22" cy="66"  r="6"/>
+    <circle cx="46" cy="80"  r="6" fill="#3e803f"/>
+    <circle cx="68" cy="66"  r="6"/>
+    <circle cx="68" cy="40"  r="6"/>
+    <circle cx="46" cy="22"  r="6"/>
+    <circle cx="46" cy="106" r="6"/>
+  </g>
+</svg>

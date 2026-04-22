@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280" role="img" aria-label="마스크 일러스트">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f9f3"/>
+      <stop offset="1" stop-color="#eaf3ea"/>
+    </linearGradient>
+    <pattern id="mdot" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#3e803f" fill-opacity=".10"/>
+    </pattern>
+    <linearGradient id="mfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eaf3ea"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="280" fill="url(#mbg)"/>
+  <rect width="480" height="280" fill="url(#mdot)"/>
+
+  <!-- ear loops -->
+  <path d="M138 90 C 96 110, 96 170, 138 190" fill="none" stroke="#3e803f" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <path d="M342 90 C 384 110, 384 170, 342 190" fill="none" stroke="#3e803f" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+
+  <!-- mask body -->
+  <path d="M150 90 Q 240 70, 330 90 L 330 195 Q 240 215, 150 195 Z" fill="url(#mfill)" stroke="#3e803f" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- multi-layer pleats -->
+  <path d="M158 120 Q 240 110, 322 120" fill="none" stroke="#3e803f" stroke-width="1.6" opacity=".45"/>
+  <path d="M158 142 Q 240 132, 322 142" fill="none" stroke="#3e803f" stroke-width="1.6" opacity=".45"/>
+  <path d="M158 165 Q 240 155, 322 165" fill="none" stroke="#3e803f" stroke-width="1.6" opacity=".45"/>
+
+  <!-- nose bridge -->
+  <path d="M210 88 Q 240 96, 270 88" fill="none" stroke="#1a3d1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- KF94 badge -->
+  <g transform="translate(252,170)">
+    <rect x="0" y="0" rx="4" ry="4" width="48" height="20" fill="#3e803f"/>
+    <text x="24" y="14" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="11" fill="#ffffff" letter-spacing="1">KF94</text>
+  </g>
+</svg>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디에스팜 | 헬스케어 산업의 신뢰 파트너</title>
+  <meta name="description" content="디에스팜은 점착라벨, 마스크, 멸균부직포, 의료기기, 피쉬콜라겐 분야에서 30년 가까이 축적한 제조 역량으로 헬스케어 산업의 신뢰 파트너가 되어왔습니다." />
+  <meta name="theme-color" content="#3e803f" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 상단 유틸리티 바 -->
+  <div class="utility">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span class="util-tag">DSPHARM CO., LTD.</span>
+      </div>
+      <nav class="utility-right" aria-label="Utility">
+        <a href="about.html">기업정보</a>
+        <a href="about.html#location">위치정보</a>
+        <a href="#news">공지사항</a>
+        <a href="#contact">온라인문의</a>
+        <a href="#" class="lang">EN</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="디에스팜 홈">
+        <img src="assets/logo.png" alt="DSPHARM 디에스팜" class="logo-img" />
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#contact">고객문의</a></li>
+          <li><a href="business/mask.html">마스크</a></li>
+          <li><a href="business/collagen.html">피쉬콜라겐</a></li>
+          <li><a href="business/medical.html">의료기기</a></li>
+          <li><a href="business/non-woven.html">멸균4중부직포</a></li>
+          <li><a href="business/label.html">점착라벨</a></li>
+          <li><a href="about.html">회사소개</a></li>
+        </ul>
+      </nav>
+
+      <a href="#inquiry" class="btn btn-primary header-cta">문의하기</a>
+
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO — 기업 이미지 풀폭 + 오버레이 카피 -->
+    <section class="hero">
+      <!-- 교체 위치: 디에스팜 본사/공장 외관 사진 (1920x1080 이상 권장)
+           실제 외관 사진을 받으면 src 만 교체하면 됩니다. -->
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80&auto=format&fit=crop"
+          alt=""
+          class="hero-img"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="dot"></span> SINCE 1995 · HEALTHCARE MANUFACTURING</p>
+          <h1 class="display">
+            정밀하게,<br/>
+            <span class="accent-light">신뢰할 수 있게.</span>
+          </h1>
+          <p class="lead lead-light">
+            디에스팜은 점착라벨에서 출발해 마스크, 멸균부직포, 의료기기,<br class="hide-sm"/>
+            피쉬콜라겐까지 — 헬스케어 산업이 요구하는 정밀 제조의 표준을 만들어 왔습니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#business" class="btn btn-primary">사업영역 보기</a>
+            <a href="#about" class="btn btn-ghost-light">회사소개 →</a>
+          </div>
+        </div>
+
+        <div class="hero-credentials" aria-label="회사 핵심 지표">
+          <div class="cred">
+            <div class="cred-num">30<span>+</span></div>
+            <div class="cred-label">YEARS<br/>제조 경험</div>
+          </div>
+          <div class="cred-divider" aria-hidden="true"></div>
+          <div class="cred">
+            <div class="cred-num">06</div>
+            <div class="cred-label">BUSINESS LINES<br/>사업 카테고리</div>
+          </div>
+          <div class="cred-divider" aria-hidden="true"></div>
+          <div class="cred">
+            <div class="cred-num">02</div>
+            <div class="cred-label">SITES<br/>이천 · 서울</div>
+          </div>
+          <div class="cred-divider" aria-hidden="true"></div>
+          <div class="cred">
+            <div class="cred-num cred-num-text">GMP</div>
+            <div class="cred-label">CERTIFIED<br/>품질 인증</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 가치 제안 스트립 -->
+    <section class="values">
+      <div class="container values-grid">
+        <div class="value">
+          <div class="value-num">01</div>
+          <h3>인증된 품질 시스템</h3>
+          <p>식약처 GMP·ISO 인증 기반의 검증된 제조 프로세스를 운영합니다.</p>
+        </div>
+        <div class="value">
+          <div class="value-num">02</div>
+          <h3>다품종 정밀 제조</h3>
+          <p>의료기기부터 라벨·부직포까지, 까다로운 산업 규격을 한 곳에서 대응합니다.</p>
+        </div>
+        <div class="value">
+          <div class="value-num">03</div>
+          <h3>장기 파트너십</h3>
+          <p>국내 주요 제약·의료 기업과 30년에 이르는 공급 신뢰를 이어오고 있습니다.</p>
+        </div>
+        <div class="value">
+          <div class="value-num">04</div>
+          <h3>R&amp;D 투자</h3>
+          <p>피쉬콜라겐 등 자체 연구 기반의 신소재로 영역을 확장하고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 사업영역 -->
+    <section class="business" id="business">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="dot"></span> BUSINESS AREAS</p>
+          <h2>여섯 개의 정밀 제조 라인</h2>
+          <p class="section-lead">
+            각 라인은 독립된 품질 기준과 전용 설비로 운영되며, 헬스케어 산업의<br class="hide-sm"/>
+            서로 다른 요구를 한 회사 안에서 통합적으로 해결합니다.
+          </p>
+        </header>
+
+        <div class="biz-grid">
+
+          <a href="business/mask.html" class="biz-card biz-feature">
+            <div class="biz-card-img"><img src="assets/illust-mask.svg" alt="마스크" /></div>
+            <div class="biz-card-body">
+              <div class="biz-num">01</div>
+              <div class="biz-tag">MASK</div>
+              <h3>마스크</h3>
+              <p>생산 자동화 라인부터 원자재, 용도별 구성, 시험성적까지<br/>
+                마스크 제조의 전 공정을 자체 운영합니다.</p>
+              <ul class="biz-meta">
+                <li>생산 자동화 장비</li>
+                <li>설비 구성 · 스펙</li>
+                <li>원자재 · 시험성적서</li>
+              </ul>
+              <span class="biz-go">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="business/collagen.html" class="biz-card">
+            <div class="biz-card-img"><img src="assets/illust-collagen.svg" alt="피쉬콜라겐" /></div>
+            <div class="biz-card-body">
+              <div class="biz-num">02</div>
+              <div class="biz-tag">COLLAGEN</div>
+              <h3>피쉬콜라겐</h3>
+              <p>마린·나노 콜라겐을 포함한 자체 R&amp;D 기반 소재 사업.</p>
+              <span class="biz-go">자세히 →</span>
+            </div>
+          </a>
+
+          <a href="business/medical.html" class="biz-card">
+            <div class="biz-card-img"><img src="assets/illust-medical.svg" alt="의료기기" /></div>
+            <div class="biz-card-body">
+              <div class="biz-num">03</div>
+              <div class="biz-tag">MEDICAL</div>
+              <h3>의료기기</h3>
+              <p>코로나 진단키트, 관절부위 활액 등 인증 의료기기.</p>
+              <span class="biz-go">자세히 →</span>
+            </div>
+          </a>
+
+          <a href="business/non-woven.html" class="biz-card">
+            <div class="biz-card-img"><img src="assets/illust-non-woven.svg" alt="멸균4중부직포" /></div>
+            <div class="biz-card-body">
+              <div class="biz-num">04</div>
+              <div class="biz-tag">NON-WOVEN</div>
+              <h3>멸균4중부직포</h3>
+              <p>수술·의료용 멸균 4중 부직포 라인.</p>
+              <span class="biz-go">자세히 →</span>
+            </div>
+          </a>
+
+          <a href="business/label.html" class="biz-card">
+            <div class="biz-card-img"><img src="assets/illust-label.svg" alt="점착라벨" /></div>
+            <div class="biz-card-body">
+              <div class="biz-num">05</div>
+              <div class="biz-tag">LABEL</div>
+              <h3>점착라벨</h3>
+              <p>특허 보유 점착 기술 기반의 라벨 생산.</p>
+              <span class="biz-go">자세히 →</span>
+            </div>
+          </a>
+
+          <a href="#contact" class="biz-card biz-card-cta">
+            <div class="biz-card-body">
+              <div class="biz-tag biz-tag-light">CONTACT</div>
+              <h3>제품 문의</h3>
+              <p>샘플 요청 · 견적 · 파트너십 상담은 영업팀이 직접 응답합니다.</p>
+              <span class="biz-go biz-go-strong">문의하기 →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT 스플릿 -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-copy">
+          <p class="eyebrow"><span class="dot"></span> ABOUT DSPHARM</p>
+          <h2>점착 기술에서<br/>헬스케어 통합 제조까지.</h2>
+          <p class="about-lead">
+            1995년 점착라벨 사업으로 시작한 디에스팜은,
+            제약·의료 산업의 까다로운 품질 요구를 단계별로 흡수하며
+            마스크, 멸균부직포, 의료기기, 신소재까지 영역을 확장해왔습니다.
+          </p>
+          <p class="about-lead">
+            한 회사 안에 여러 정밀 제조 라인을 통합 운영함으로써,
+            고객은 더 짧은 리드타임과 일관된 품질 기준을 동시에 얻습니다.
+          </p>
+          <a href="about.html" class="btn btn-dark">회사소개 자세히 →</a>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num">30<span>+</span></div>
+            <div class="stat-label">년의 제조 경험</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">06</div>
+            <div class="stat-label">사업 카테고리</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">02</div>
+            <div class="stat-label">생산·운영 거점</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100<span>%</span></div>
+            <div class="stat-label">국내 자체 제조</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 신뢰 지표 -->
+    <section class="trust">
+      <div class="container">
+        <header class="section-head section-head-light">
+          <p class="eyebrow eyebrow-light"><span class="dot"></span> CERTIFICATIONS &amp; PARTNERS</p>
+          <h2>검증된 품질, 오래된 신뢰.</h2>
+        </header>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/>
+                <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>식약처 GMP / ISO 인증</h4>
+            <p>의료기기 및 마스크 라인 전반에 대한 인증 체계를 유지합니다.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 7h16M4 12h16M4 17h10" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>특허 기반 점착 기술</h4>
+            <p>배기성 점착대지 합지 방법 등 자체 특허를 보유한 점착 라인.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>국내 주요 고객사 공급</h4>
+            <p>국내 제약·의료 기업과의 장기 공급 트랙 레코드를 보유합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS / 공지 -->
+    <section class="news" id="news">
+      <div class="container news-inner">
+        <header class="section-head news-head">
+          <p class="eyebrow"><span class="dot"></span> NEWS</p>
+          <h2>공지 &amp; 업데이트</h2>
+          <a href="#" class="news-all">전체 보기 →</a>
+        </header>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2024.10.14</span>
+            <a href="#" class="news-title">피쉬콜라겐 내용 업데이트 되었습니다.</a>
+            <span class="news-tag">제품</span>
+          </li>
+          <li>
+            <span class="news-date">2023.05.22</span>
+            <a href="#" class="news-title">점착라벨 / 마스크 / 의료기기 내용 보강 되었습니다.</a>
+            <span class="news-tag">제품</span>
+          </li>
+          <li>
+            <span class="news-date">2021.05.06</span>
+            <a href="#" class="news-title">홈페이지 전체 리뉴얼 안내</a>
+            <span class="news-tag">공지</span>
+          </li>
+          <li>
+            <span class="news-date">2009.09.28</span>
+            <a href="#" class="news-title">배기성 점착대지의 합지방법 특허</a>
+            <span class="news-tag">특허</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-light"><span class="dot"></span> CONTACT</p>
+          <h2>프로젝트가 있으신가요?</h2>
+          <p class="contact-lead">
+            샘플 요청, 견적, OEM/ODM 상담 모두 영업팀이 직접 응답합니다.<br/>
+            평일 09:00–18:00 · 보통 1영업일 이내 회신.
+          </p>
+          <div class="contact-actions">
+            <a href="#" id="inquiry" class="btn btn-primary">온라인 문의</a>
+            <a href="mailto:dssticker@naver.com" class="btn btn-ghost-light">dssticker@naver.com</a>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-tag">HEAD OFFICE · 본사</div>
+            <h4>이천 생산 본사</h4>
+            <p class="contact-addr">경기도 이천시 모가면 진상미로1055번길 65</p>
+            <dl class="contact-dl">
+              <div><dt>TEL</dt><dd>031-631-6838</dd></div>
+              <div><dt>FAX</dt><dd>031-632-6088</dd></div>
+            </dl>
+          </div>
+          <div class="contact-card">
+            <div class="contact-tag">SEOUL · 서울사무소</div>
+            <h4>서울 영업 사무소</h4>
+            <p class="contact-addr">서울시 중구 퇴계로36가길 77 (필동2가)</p>
+            <dl class="contact-dl">
+              <div><dt>TEL</dt><dd>02-2266-1455</dd></div>
+              <div><dt>FAX</dt><dd>02-2277-0197</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="assets/logo-light.png" alt="DSPHARM" class="logo-img logo-img-sm" />
+        </div>
+        <p class="footer-tag">정밀하게, 신뢰할 수 있게.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div>
+          <h5>디에스팜 주식회사</h5>
+          <p>대표 : 김경수</p>
+          <p>사업자번호 : 130-81-07036</p>
+          <p>메일 : <a href="mailto:dssticker@naver.com">dssticker@naver.com</a></p>
+        </div>
+        <div>
+          <h5>본사</h5>
+          <p>경기도 이천시 모가면<br/>진상미로1055번길 65</p>
+          <p>TEL 031-631-6838 · FAX 031-632-6088</p>
+        </div>
+        <div>
+          <h5>서울사무소</h5>
+          <p>서울시 중구 퇴계로36가길 77<br/>(필동2가)</p>
+          <p>TEL 02-2266-1455 · FAX 02-2277-0197</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© DSPHARM CO., LTD. ALL RIGHTS RESERVED.</span>
+        <nav class="footer-utils">
+          <a href="#">개인정보처리방침</a>
+          <a href="#">이용약관</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280" role="img" aria-label="의료기기 일러스트">
+  <defs>
+    <linearGradient id="medbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f9f3"/>
+      <stop offset="1" stop-color="#e8f1e8"/>
+    </linearGradient>
+    <pattern id="medgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L 24 0 M 0 0 L 0 24" fill="none" stroke="#3e803f" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="280" fill="url(#medbg)"/>
+  <rect width="480" height="280" fill="url(#medgrid)"/>
+
+  <!-- shield with check -->
+  <g transform="translate(80,50)">
+    <path d="M70 0 L 140 26 L 140 96 Q 140 156, 70 188 Q 0 156, 0 96 L 0 26 Z"
+          fill="#ffffff" stroke="#3e803f" stroke-width="3" stroke-linejoin="round"/>
+    <!-- inner cross -->
+    <rect x="58" y="58" width="24" height="72" rx="3" fill="#3e803f"/>
+    <rect x="34" y="82" width="72" height="24" rx="3" fill="#3e803f"/>
+  </g>
+
+  <!-- diagnostic test strip -->
+  <g transform="translate(290,80)">
+    <rect x="0" y="0" width="140" height="42" rx="6" fill="#ffffff" stroke="#3e803f" stroke-width="2"/>
+    <rect x="10" y="10" width="22" height="22" rx="2" fill="#3e803f" opacity=".15"/>
+    <line x1="46" y1="14" x2="62" y2="14" stroke="#3e803f" stroke-width="3" stroke-linecap="round"/>
+    <line x1="46" y1="22" x2="120" y2="22" stroke="#3e803f" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+    <line x1="46" y1="30" x2="100" y2="30" stroke="#3e803f" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+    <!-- dual band -->
+    <rect x="78"  y="10" width="3" height="22" fill="#3e803f"/>
+    <rect x="100" y="10" width="3" height="22" fill="#3e803f"/>
+  </g>
+
+  <!-- heartbeat line -->
+  <g transform="translate(260,170)">
+    <path d="M0 24 L 20 24 L 30 8 L 44 40 L 56 16 L 70 24 L 170 24"
+          fill="none" stroke="#3e803f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="170" cy="24" r="5" fill="#3e803f"/>
+  </g>
+</svg>

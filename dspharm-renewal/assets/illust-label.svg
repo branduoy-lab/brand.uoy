@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" width="480" height="280" role="img" aria-label="점착라벨 일러스트">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f9f3"/>
+      <stop offset="1" stop-color="#e8f1e8"/>
+    </linearGradient>
+    <pattern id="ldot" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#3e803f" fill-opacity=".25"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="280" fill="url(#lbg)"/>
+
+  <!-- backing paper (release liner) -->
+  <g transform="translate(120,60)">
+    <rect x="0" y="0" width="240" height="160" rx="6" fill="#ffffff" stroke="#3e803f" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="6" y="6" width="228" height="148" rx="4" fill="url(#ldot)"/>
+  </g>
+
+  <!-- label peeling up -->
+  <g transform="translate(120,60)">
+    <!-- shadow under peel -->
+    <path d="M0 110 L 240 110 L 240 160 L 0 160 Z" fill="#000" opacity=".05"/>
+    <!-- main label body -->
+    <path d="M0 0 L 240 0 L 240 160 L 60 160 Q 30 130, 0 110 Z" fill="#3e803f"/>
+    <!-- peeled flap -->
+    <path d="M0 110 Q 30 130, 60 160 L 30 130 Q 18 116, 0 90 Z" fill="#336b34"/>
+
+    <!-- label content -->
+    <g fill="#ffffff" font-family="Inter, sans-serif">
+      <text x="20" y="36" font-weight="700" font-size="14" letter-spacing="2">DSPHARM</text>
+      <text x="20" y="54" font-weight="500" font-size="10" opacity=".75" letter-spacing="1">ADHESIVE LABEL · KOREA</text>
+      <!-- barcode -->
+      <g transform="translate(20,72)">
+        <rect x="0"   y="0" width="2" height="34" fill="#fff"/>
+        <rect x="5"   y="0" width="3" height="34" fill="#fff"/>
+        <rect x="11"  y="0" width="1" height="34" fill="#fff"/>
+        <rect x="14"  y="0" width="4" height="34" fill="#fff"/>
+        <rect x="21"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="26"  y="0" width="3" height="34" fill="#fff"/>
+        <rect x="32"  y="0" width="1" height="34" fill="#fff"/>
+        <rect x="36"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="41"  y="0" width="4" height="34" fill="#fff"/>
+        <rect x="48"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="53"  y="0" width="3" height="34" fill="#fff"/>
+        <rect x="59"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="64"  y="0" width="1" height="34" fill="#fff"/>
+        <rect x="68"  y="0" width="3" height="34" fill="#fff"/>
+        <rect x="74"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="79"  y="0" width="4" height="34" fill="#fff"/>
+        <rect x="86"  y="0" width="2" height="34" fill="#fff"/>
+        <rect x="91"  y="0" width="3" height="34" fill="#fff"/>
+        <rect x="97"  y="0" width="1" height="34" fill="#fff"/>
+        <rect x="101" y="0" width="2" height="34" fill="#fff"/>
+        <text x="50" y="48" text-anchor="middle" font-weight="500" font-size="9" fill="#fff" opacity=".85" letter-spacing="2">8801234 567890</text>
+      </g>
+      <!-- info block -->
+      <g transform="translate(150,76)" font-size="9" font-weight="500" fill="#ffffff" opacity=".85">
+        <text x="0" y="0" letter-spacing="1.2">LOT</text>
+        <text x="0" y="12" font-weight="700">DS-2025-001</text>
+        <text x="0" y="28" letter-spacing="1.2">EXP</text>
+        <text x="0" y="40" font-weight="700">2027.04.22</text>
+      </g>
+    </g>
+  </g>
+</svg>
