@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUDEN Biomed · Hear What Matters</title>
+  <meta name="description" content="AUDEN Biomed. NEMO — Noise Elimination Module On-device. 극한의 소음 속에서도 또렷한 목소리를 복원하는 온디바이스 AI 음성 표준 플랫폼." />
+  <meta property="og:title" content="AUDEN Biomed — Hear What Matters" />
+  <meta property="og:description" content="NEMO · Noise Elimination Module On-device. 프라이버시를 지키는 온디바이스 AI로 소음 환경에서도 또렷한 음성을 복원합니다." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="AUDEN Biomed 홈">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4de6d4"/>
+                <stop offset="100%" stop-color="#4d6cff"/>
+              </linearGradient>
+            </defs>
+            <circle cx="16" cy="16" r="14" fill="none" stroke="url(#lg)" stroke-width="1.5"/>
+            <path d="M7 16 L10 16 L12 10 L14 22 L16 13 L18 19 L20 15 L22 17 L25 16" fill="none" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-ko">AUDEN Biomed</span>
+          <span class="brand-en">NEMO · Noise Elimination Module On-device</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#problem">문제</a>
+        <a href="#technology">기술</a>
+        <a href="#advantage">강점</a>
+        <a href="#usecases">활용 분야</a>
+        <a href="#about">회사 소개</a>
+        <a href="#contact">문의</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">Contact us <span aria-hidden="true">→</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow">
+        <span class="dot"></span>
+        On-device AI · Voice Restoration
+      </p>
+      <h1 class="hero-title">
+        Hear<br />
+        <em>What</em> Matters.
+      </h1>
+      <p class="hero-sub">
+        극한의 소음 속에서도 또렷한 목소리를 복원하는<br class="break-desktop" />
+        <strong>NEMO</strong>, Noise Elimination Module On-device.
+      </p>
+      <div class="hero-ctas">
+        <a href="#technology" class="btn btn-primary">기술 살펴보기</a>
+        <a href="#contact" class="btn btn-ghost">협업 문의 <span aria-hidden="true">→</span></a>
+      </div>
+
+      <!-- Animated waveform -->
+      <div class="hero-viz" aria-hidden="true">
+        <div class="viz-label">
+          <span class="code">input.wav</span>
+          <span class="arrow">→</span>
+          <span class="code">NEMO</span>
+          <span class="arrow">→</span>
+          <span class="code">clean.wav</span>
+        </div>
+        <div class="waveforms">
+          <div class="wave wave-noisy">
+            <span>Noisy</span>
+            <svg viewBox="0 0 600 80" preserveAspectRatio="none">
+              <path id="noisyPath" d="M0 40 Q 20 10 40 40 T 80 40 T 120 40 T 160 40 T 200 40 T 240 40 T 280 40 T 320 40 T 360 40 T 400 40 T 440 40 T 480 40 T 520 40 T 560 40 T 600 40" stroke="#ff6b6b" stroke-width="1.5" fill="none" opacity="0.7"/>
+              <path d="M0 40 Q 15 5 30 45 T 60 35 T 90 50 T 120 25 T 150 55 T 180 30 T 210 48 T 240 20 T 270 52 T 300 32 T 330 47 T 360 22 T 390 55 T 420 28 T 450 42 T 480 25 T 510 50 T 540 30 T 570 45 T 600 40" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="wave wave-clean">
+            <span>Clean</span>
+            <svg viewBox="0 0 600 80" preserveAspectRatio="none">
+              <path d="M0 40 C 50 20, 100 60, 150 40 S 250 20, 300 40 S 400 60, 450 40 S 550 20, 600 40" stroke="#4de6d4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section section-problem" id="problem">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">01</span>
+        <span class="label">Problem</span>
+      </div>
+      <h2 class="section-title">
+        실제 환경의 소리는 <em>결코 깨끗하지 않다.</em>
+      </h2>
+      <p class="section-sub">
+        병원 복도, 지하철, 공장, 길거리 — 음성이 필요한 모든 순간은 소음으로 덮여 있습니다.
+        클라우드 기반 노이즈 처리는 프라이버시를 뚫고, 지연은 실시간 소통을 망칩니다.
+      </p>
+
+      <div class="problem-grid">
+        <article class="problem-card">
+          <div class="problem-num">01</div>
+          <h3>소음 아래 묻힌 음성</h3>
+          <p>화자 분리 실패, 단어 소실, 발음 왜곡. 기존 노이즈 제거 기술은 소음을 지울 때 음성까지 깎아냅니다.</p>
+        </article>
+        <article class="problem-card">
+          <div class="problem-num">02</div>
+          <h3>프라이버시를 지불하는 클라우드</h3>
+          <p>음성 데이터가 서버로 전송되는 순간, 민감 정보는 더 이상 내 것이 아닙니다. 의료·국방·법률에선 허용되지 않는 선택지입니다.</p>
+        </article>
+        <article class="problem-card">
+          <div class="problem-num">03</div>
+          <h3>실시간이 아닌 실시간</h3>
+          <p>네트워크 왕복, 서버 처리, 반환 지연. "실시간" 처리라고 부를 수 없는 수백 밀리초의 공백이 소통을 끊어 놓습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology — NEMO -->
+  <section class="section section-tech" id="technology">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">02</span>
+        <span class="label">Technology</span>
+      </div>
+      <h2 class="section-title">
+        <em>NEMO</em>, 온디바이스로 완성한<br />
+        <span class="accent">AI 음성 복원 모듈.</span>
+      </h2>
+      <p class="section-sub">
+        <strong>Noise Elimination Module On-device</strong>. 클라우드를 거치지 않고
+        장치 안에서 소음을 분리하고 순수한 음성을 복원합니다. 데이터는 나가지 않고,
+        지연은 사라집니다.
+      </p>
+
+      <div class="tech-stack">
+        <div class="tech-item">
+          <p class="tech-step">STEP 01</p>
+          <h3>입력 · Capture</h3>
+          <p>마이크 어레이가 포착한 raw audio를 그대로 처리. 전처리 없이도 동작하도록 설계된 end-to-end 파이프라인.</p>
+        </div>
+        <div class="tech-arrow" aria-hidden="true">→</div>
+        <div class="tech-item highlight">
+          <p class="tech-step">STEP 02</p>
+          <h3>분리 · NEMO Core</h3>
+          <p>자체 개발 Voice AI 모델이 화자 음성과 배경 소음을 분리. 온디바이스에서 ≤40ms 내 응답.</p>
+        </div>
+        <div class="tech-arrow" aria-hidden="true">→</div>
+        <div class="tech-item">
+          <p class="tech-step">STEP 03</p>
+          <h3>복원 · Restore</h3>
+          <p>손상된 음소·억양·음색을 AI가 자연스럽게 복원. 원본 화자 특성을 유지합니다.</p>
+        </div>
+      </div>
+
+      <div class="tech-specs">
+        <div class="spec">
+          <div class="spec-value">≤ 40<small>ms</small></div>
+          <div class="spec-key">End-to-end Latency</div>
+        </div>
+        <div class="spec">
+          <div class="spec-value">0<small>byte</small></div>
+          <div class="spec-key">Cloud Transmission</div>
+        </div>
+        <div class="spec">
+          <div class="spec-value">&gt; 25<small>dB</small></div>
+          <div class="spec-key">SNR Improvement</div>
+        </div>
+        <div class="spec">
+          <div class="spec-value">ARM · x86<small></small></div>
+          <div class="spec-key">Cross Platform</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section section-advantage" id="advantage">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">03</span>
+        <span class="label">Why NEMO</span>
+      </div>
+      <h2 class="section-title">
+        <em>3가지</em>로 증명합니다.
+      </h2>
+
+      <div class="adv-grid">
+        <article class="adv-card">
+          <div class="adv-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="44" height="44">
+              <rect x="8" y="14" width="32" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <rect x="18" y="8" width="12" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M16 24 L20 24 L22 20 L24 28 L26 22 L28 24 L32 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>On-device.</h3>
+          <p>모든 연산이 기기 안에서. 네트워크가 끊겨도, 비행기 안에서도, 지하 시설에서도 변함없이 동작합니다.</p>
+        </article>
+
+        <article class="adv-card">
+          <div class="adv-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="44" height="44">
+              <path d="M24 8 L36 14 V24 C36 32 30 38 24 40 C18 38 12 32 12 24 V14 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M19 24 L23 28 L30 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Privacy-first.</h3>
+          <p>음성 데이터가 기기를 떠나지 않습니다. 의료 상담, 법률 자문, 민감한 대화에도 안심하고 쓸 수 있습니다.</p>
+        </article>
+
+        <article class="adv-card">
+          <div class="adv-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="44" height="44">
+              <path d="M18 6 L10 26 H22 L18 42 L38 20 H26 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Real-time.</h3>
+          <p>왕복 지연이 없는 진짜 실시간. 화자와 청자 사이, 말이 끝나기 전에 소음이 사라집니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section section-usecases" id="usecases">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">04</span>
+        <span class="label">Use Cases</span>
+      </div>
+      <h2 class="section-title">
+        목소리가 <em>중요한 모든 곳</em>에서.
+      </h2>
+
+      <div class="use-grid">
+        <article class="use-card">
+          <div class="use-tag">Healthcare</div>
+          <h3>의료 상담 · 원격 진료</h3>
+          <p>병원 복도의 웅성거림 속에서도 의사-환자 간 음성을 또렷하게 복원. 의료 녹취의 정확도와 보안을 동시에.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-tag">Mobility</div>
+          <h3>차량 내 음성 인터페이스</h3>
+          <p>엔진·주행 소음, 창문 열림, 라디오. 운전자의 말만 골라내 차량 AI에 전달합니다.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-tag">Hearables</div>
+          <h3>보청기 · 이어버드</h3>
+          <p>온디바이스로 저전력 구동. 배터리를 지키면서 소음 환경에서의 청음 경험을 새로 정의합니다.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-tag">Industrial</div>
+          <h3>산업 · 현장 통신</h3>
+          <p>공장, 건설현장, 광산. 헬멧 마이크에서 수집한 지시가 왜곡 없이 팀에게 닿습니다.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-tag">Security</div>
+          <h3>국방 · 보안</h3>
+          <p>데이터 반출이 금지된 환경에서도 완전한 음성 처리. 현장에서 실시간으로, 서버 없이.</p>
+        </article>
+        <article class="use-card">
+          <div class="use-tag">Accessibility</div>
+          <h3>접근성 · 자막 · 보조 기술</h3>
+          <p>청각 보조, 실시간 자막, 수어 상담 보조. 소리가 닿지 않던 경계 너머의 사용자에게까지.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">05</span>
+        <span class="label">About Us</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="section-title">
+            Better medicine<br />
+            for <em>humanity.</em>
+          </h2>
+          <p class="about-lead">
+            잡음의 경계를 넘어, 세상의 모든 소리를 가치 있는 데이터로 연결합니다.
+          </p>
+          <p>
+            AUDEN Biomed는 극한의 소음 환경에서도 완전한 커뮤니케이션을 제공하는
+            <strong>글로벌 AI 음성 표준 플랫폼</strong>을 만들고 있습니다. 장치 안에서
+            끝나는 AI, 유출되지 않는 데이터, 끊어지지 않는 대화 — 우리가 만드는 기술이
+            사람과 사람 사이의 이해를 조금 더 가까이 끌어당깁니다.
+          </p>
+        </div>
+        <ul class="about-pillars">
+          <li>
+            <p class="pil-label">Vision</p>
+            <p class="pil-text">잡음의 경계를 넘어, 세상의 모든 소리를 가치 있는 데이터로.</p>
+          </li>
+          <li>
+            <p class="pil-label">Mission</p>
+            <p class="pil-text">극한 소음 환경에서도 완전한 커뮤니케이션을 전달하는 AI 음성 표준 플랫폼.</p>
+          </li>
+          <li>
+            <p class="pil-label">Principle</p>
+            <p class="pil-text">On-device · Privacy-first · Real-time.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="num">06</span>
+        <span class="label">Contact</span>
+      </div>
+      <h2 class="section-title">
+        함께 만들어 갈 <em>동료 · 파트너</em>를 찾습니다.
+      </h2>
+      <p class="section-sub">
+        프로젝트 협업, 기술 통합, 투자, 채용 관련 문의를 기다립니다.
+      </p>
+
+      <div class="contact-grid">
+        <dl class="contact-info">
+          <dt>Location</dt>
+          <dd>
+            1071 Anyangcheon-ro, Room 604, Building B<br />
+            (Urology Hospital), Mokdong, Yangcheon-gu,<br />
+            Seoul, Republic of Korea
+          </dd>
+
+          <dt>Phone</dt>
+          <dd><a href="tel:+82226505903">+82 2-2650-5903</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:jinu600@gmail.com">jinu600@gmail.com</a></dd>
+
+          <dt>Inquiry</dt>
+          <dd>협업 · 채용 · 투자 · 기타 문의</dd>
+        </dl>
+
+        <form class="contact-form" onsubmit="return false;" aria-label="문의 폼">
+          <div class="row-2">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Full name" required />
+            </label>
+            <label>
+              <span>Company</span>
+              <input type="text" name="company" placeholder="Organization" />
+            </label>
+          </div>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            <span>Interest</span>
+            <select name="interest">
+              <option>기술 통합 / 라이선싱</option>
+              <option>협업 · 파트너십</option>
+              <option>투자 관련</option>
+              <option>채용 · 합류</option>
+              <option>기타 문의</option>
+            </select>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="어떤 이야기를 나누고 싶으신가요?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">AUDEN Biomed</p>
+        <p class="footer-tag">NEMO · Noise Elimination Module On-device</p>
+      </div>
+      <div class="footer-meta">
+        <p>1071 Anyangcheon-ro, Mokdong, Yangcheon-gu, Seoul</p>
+        <p>+82 2-2650-5903 · jinu600@gmail.com</p>
+      </div>
+      <p class="footer-copy">© 2023 – 2026 AUDEN Biomed. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
