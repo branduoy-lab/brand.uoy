@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0a0a0a"/>
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Bebas Neue', 'Arial Narrow', sans-serif"
+        font-size="30" font-weight="700"
+        letter-spacing="2"
+        fill="#ffffff">YB</text>
+  <rect x="14" y="48" width="36" height="2" fill="#c9a96e"/>
+</svg>
