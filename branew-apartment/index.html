@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRANEW · 브래뉴 — A New Standard of Living</title>
+  <meta name="description" content="BRANEW(브래뉴) 프리미엄 아파트. 도시 위에 완성되는 새로운 기준, 시간이 지날수록 가치가 되는 집. 사업개요·입지·평면·커뮤니티까지 한 곳에서 확인하세요." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@200;300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Notice -->
+  <div class="site-notice" id="siteNotice" role="status">
+    <p>
+      이 페이지는 <strong>브랜유 포트폴리오</strong> 사이트입니다 ·
+      <a href="https://www.instagram.com/brand.uoy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@brand.uoy</a>
+    </p>
+    <button class="notice-close" id="noticeClose" type="button" aria-label="알림 닫기">×</button>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="BRANEW 홈" data-jump="hero">
+        <span class="brand-mark">
+          <svg viewBox="0 0 36 36" width="32" height="32" aria-hidden="true">
+            <path d="M10 30 L10 8 L22 8 Q28 8 28 14 Q28 19 22 19 L13 19 L26 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-en">BRANEW</span>
+          <span class="brand-tag">PREMIUM APARTMENT</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#brand" data-jump="brand">BRAND</a>
+        <a href="#overview" data-jump="overview">OVERVIEW</a>
+        <a href="#premium" data-jump="premium">PREMIUM</a>
+        <a href="#location" data-jump="location">LOCATION</a>
+        <a href="#unit" data-jump="unit">UNIT</a>
+        <a href="#community" data-jump="community">COMMUNITY</a>
+        <a href="#contact" class="nav-cta" data-jump="contact">분양 문의</a>
+      </nav>
+
+      <div class="section-counter" aria-hidden="true">
+        <span class="cc-now" id="ccNow">01</span>
+        <span class="cc-divider"></span>
+        <span class="cc-total">10</span>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Right Dot Indicator -->
+  <aside class="dot-nav" aria-label="섹션 인디케이터">
+    <ol id="dotNav">
+      <li><a href="#hero" data-jump="hero" data-label="HOME"><span class="dot-num">01</span><span class="dot-label">HOME</span></a></li>
+      <li><a href="#brand" data-jump="brand" data-label="BRAND"><span class="dot-num">02</span><span class="dot-label">BRAND</span></a></li>
+      <li><a href="#overview" data-jump="overview" data-label="OVERVIEW"><span class="dot-num">03</span><span class="dot-label">OVERVIEW</span></a></li>
+      <li><a href="#premium" data-jump="premium" data-label="PREMIUM"><span class="dot-num">04</span><span class="dot-label">PREMIUM</span></a></li>
+      <li><a href="#location" data-jump="location" data-label="LOCATION"><span class="dot-num">05</span><span class="dot-label">LOCATION</span></a></li>
+      <li><a href="#architecture" data-jump="architecture" data-label="ARCHITECTURE"><span class="dot-num">06</span><span class="dot-label">ARCHITECTURE</span></a></li>
+      <li><a href="#unit" data-jump="unit" data-label="UNIT"><span class="dot-num">07</span><span class="dot-label">UNIT</span></a></li>
+      <li><a href="#community" data-jump="community" data-label="COMMUNITY"><span class="dot-num">08</span><span class="dot-label">COMMUNITY</span></a></li>
+      <li><a href="#contact" data-jump="contact" data-label="CONTACT"><span class="dot-num">09</span><span class="dot-label">CONTACT</span></a></li>
+      <li><a href="#brochure" data-jump="brochure" data-label="BROCHURE"><span class="dot-num">10</span><span class="dot-label">BROCHURE</span></a></li>
+    </ol>
+  </aside>
+
+  <!-- Snap container -->
+  <main class="snap-wrap" id="snapWrap">
+
+    <!-- 01. Hero -->
+    <section class="snap hero" id="hero" data-section="hero" data-num="01" data-label="HOME">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="img/hero-1.png" alt="" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="snap-inner hero-inner">
+        <p class="eyebrow"><span class="line"></span> A NEW STANDARD OF LIVING</p>
+        <h1 class="hero-title">
+          <span class="hero-line">새로운 기준,</span>
+          <span class="hero-line gold">더 빛나는 삶.</span>
+        </h1>
+        <p class="hero-sub">
+          도시 위에 완성되는 단 하나의 기준.<br />
+          브래뉴가 제안하는 프리미엄 라이프의 시작.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary" data-jump="contact">분양 상담 신청</a>
+          <a href="#overview" class="btn btn-line" data-jump="overview">사업개요 보기 <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 02. Brand Value -->
+    <section class="snap section-split" id="brand" data-section="brand" data-num="02" data-label="BRAND">
+      <div class="split-image" aria-hidden="true">
+        <img src="img/garden.png" alt="" />
+        <div class="split-image-overlay"></div>
+        <span class="split-watermark">BRAND<br />VALUE</span>
+      </div>
+      <div class="split-text">
+        <p class="section-num">02 — BRAND VALUE</p>
+        <h2 class="section-title">
+          자연과 함께하는 <br />
+          <em>일상의 품격.</em>
+        </h2>
+        <p class="lead">
+          단지 한가운데 깃든 정원, 도심 속에서 누리는 자연 속 휴식.<br />
+          브래뉴는 머무는 공간을 넘어, 자연과 어우러지는 하루를 짓습니다.<br />
+          시간이 지날수록 더 깊어지는 일상의 품격을 담았습니다.
+        </p>
+        <ul class="brand-pillars">
+          <li>
+            <b>NATURE INSIDE</b>
+            <span>단지 안으로 들여놓은 사계절 정원</span>
+          </li>
+          <li>
+            <b>EXCELLENT LOCATION</b>
+            <span>도심과 한강이 가까운 자리</span>
+          </li>
+          <li>
+            <b>DESIGN &amp; PLAN</b>
+            <span>자연과 사람을 잇는 공간 설계</span>
+          </li>
+          <li>
+            <b>SLOW COMMUNITY</b>
+            <span>일상이 천천히 깊어지는 커뮤니티</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 03. Overview -->
+    <section class="snap section-split reverse" id="overview" data-section="overview" data-num="03" data-label="OVERVIEW">
+      <div class="split-text">
+        <p class="section-num">03 — PROJECT OVERVIEW</p>
+        <h2 class="section-title">
+          하나의 도시,<br />
+          하나의 <em>랜드마크.</em>
+        </h2>
+        <p class="section-desc">서울 한강뷰에 완성되는 49층 프리미엄 단지.</p>
+        <dl class="overview-list">
+          <dt>위치</dt><dd>서울 강동구 천호동 일대</dd>
+          <dt>대지면적</dt><dd>약 38,420㎡</dd>
+          <dt>연면적</dt><dd>약 218,940㎡</dd>
+          <dt>규모</dt><dd>지하 4층 ~ 지상 49층 / 8개동</dd>
+          <dt>총 세대수</dt><dd>1,234 세대</dd>
+          <dt>주차대수</dt><dd>1,840대 (세대당 1.49)</dd>
+          <dt>입주예정</dt><dd>2027년 6월</dd>
+        </dl>
+      </div>
+      <div class="split-image" aria-hidden="true">
+        <img src="img/hero-2.png" alt="" />
+        <div class="split-image-overlay"></div>
+        <div class="overview-stamp">
+          <span class="stamp-en">EST.</span>
+          <span class="stamp-num">2027</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Premium -->
+    <section class="snap section-fullbleed solid" id="premium" data-section="premium" data-num="04" data-label="PREMIUM">
+      <div class="snap-inner fb-inner">
+        <header class="fb-head">
+          <p class="section-num light">04 — PREMIUM</p>
+          <h2 class="section-title light">
+            시간이 지날수록 <em>가치가 되는</em> 집.
+          </h2>
+        </header>
+
+        <ol class="premium-strip">
+          <li>
+            <span class="ps-num">01</span>
+            <h3>입지 프리미엄</h3>
+            <p>광역 교통망의 결절점, 5·8호선 더블 역세권. 서울 도심 30분 이내.</p>
+          </li>
+          <li>
+            <span class="ps-num">02</span>
+            <h3>브랜드 가치</h3>
+            <p>brand.uoy 디렉팅의 일관된 디자인 언어. 입주 후 자산가치까지.</p>
+          </li>
+          <li>
+            <span class="ps-num">03</span>
+            <h3>미래 가치</h3>
+            <p>인근 정비사업과 연계되는 도시재생, 상승하는 권역 가치의 중심.</p>
+          </li>
+          <li>
+            <span class="ps-num">04</span>
+            <h3>생활 인프라</h3>
+            <p>대형 백화점·메디컬·문화시설을 단지 밖 5분 거리에서.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05. Location -->
+    <section class="snap section-split" id="location" data-section="location" data-num="05" data-label="LOCATION">
+      <div class="split-image map">
+        <iframe class="map-iframe"
+                src="https://maps.google.com/maps?q=%EC%B2%9C%ED%98%B8%EC%97%AD+5%ED%98%B8%EC%84%A0&hl=ko&z=16&output=embed"
+                title="BRANEW 위치 — 천호역"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+      </div>
+      <div class="split-text">
+        <p class="section-num">05 — LOCATION</p>
+        <h2 class="section-title">
+          한강과 도심,<br />
+          모든 것이 <em>한 걸음.</em>
+        </h2>
+        <p class="section-desc">천호역 5·8호선 더블 역세권. 한강과 도심을 잇는 자리, 단지 가까이에서 함께합니다.</p>
+        <ul class="location-list">
+          <li>
+            <span class="loc-tag">TRANSPORT</span>
+            <div class="loc-body">
+              <h4>지하철 · 도로</h4>
+              <p>
+                <b>도보 3분</b> 천호역
+                <span class="line-mark line-5" aria-label="5호선">5</span><span class="line-mark line-8" aria-label="8호선">8</span>
+                <span class="dot-sep"></span>
+                <b>5분</b> 올림픽대로 IC <span class="dot-sep"></span>
+                <b>15분</b> 잠실 · 강남권
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="loc-tag">LIFESTYLE</span>
+            <div class="loc-body">
+              <h4>백화점 · 병원 · 마트</h4>
+              <p><b>도보 5분</b> 현대백화점 천호점 <span class="dot-sep"></span> <b>7분</b> 강동성심병원 <span class="dot-sep"></span> <b>10분</b> 이마트 강동 · 로데오거리</p>
+            </div>
+          </li>
+          <li>
+            <span class="loc-tag">EDUCATION</span>
+            <div class="loc-body">
+              <h4>초 · 중 · 고</h4>
+              <p><b>도보 5분</b> 천일초 · 동신중 <span class="dot-sep"></span> <b>10분</b> 광남고 · 한영외고</p>
+            </div>
+          </li>
+          <li>
+            <span class="loc-tag">NATURE</span>
+            <div class="loc-body">
+              <h4>한강 · 공원</h4>
+              <p><b>도보 7분</b> 한강시민공원 광나루지구 <span class="dot-sep"></span> <b>10분</b> 올림픽공원 · 길동생태공원</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 06. Architecture -->
+    <section class="snap section-fullbleed dark" id="architecture" data-section="architecture" data-num="06" data-label="ARCHITECTURE">
+      <div class="fb-bg" aria-hidden="true">
+        <img src="img/hero-2.png" alt="" />
+        <div class="fb-overlay strong"></div>
+      </div>
+      <div class="snap-inner fb-inner center">
+        <p class="section-num light">06 — ARCHITECTURE</p>
+        <h2 class="section-title light huge">
+          도시 위에 그려진<br />
+          <em>실루엣.</em>
+        </h2>
+        <p class="section-desc light">
+          한강을 등진 49층의 곡선 라인, 밤이 되면 도시의 빛을 닮는 외관.<br />
+          브래뉴는 단지 그 자체로 도시의 랜드마크가 됩니다.
+        </p>
+        <ul class="arch-features">
+          <li><b>49F</b><span>최고 층수</span></li>
+          <li><b>4BAY</b><span>판상형 구조</span></li>
+          <li><b>33㎡</b><span>최대 발코니</span></li>
+          <li><b>2.7m</b><span>천장고</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 07. Unit Plan -->
+    <section class="snap section-unit" id="unit" data-section="unit" data-num="07" data-label="UNIT">
+      <div class="snap-inner unit-inner">
+        <header class="unit-head">
+          <div>
+            <p class="section-num">07 — UNIT PLAN</p>
+            <h2 class="section-title">
+              공간의 가치를 <em>높이다.</em>
+            </h2>
+          </div>
+          <div class="unit-tabs" role="tablist">
+            <button class="unit-tab is-active" data-unit="84" role="tab" aria-selected="true">84A</button>
+            <button class="unit-tab" data-unit="114" role="tab" aria-selected="false">114A</button>
+            <button class="unit-tab" data-unit="142" role="tab" aria-selected="false">142A</button>
+          </div>
+        </header>
+
+        <div class="unit-panels">
+          <article class="unit-panel is-active" data-panel="84">
+            <figure class="unit-image">
+              <img src="img/unit-84.png" alt="84A 평면 및 인테리어" loading="lazy" />
+            </figure>
+            <div class="unit-info">
+              <h3 class="unit-name">84A</h3>
+              <p class="unit-share">총 1,234세대 중 <b>567 세대</b></p>
+              <dl class="unit-meta">
+                <div><dt>전용</dt><dd>84.98㎡</dd></div>
+                <div><dt>공급</dt><dd>112.25㎡</dd></div>
+                <div><dt>계약</dt><dd>164.35㎡</dd></div>
+              </dl>
+              <ul class="unit-points">
+                <li>4Bay 판상형 — 채광·통풍 최적화</li>
+                <li>팬트리 &amp; 드레스룸 — 효율적 공간</li>
+                <li>가족 중심 동선</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="unit-panel" data-panel="114">
+            <figure class="unit-image">
+              <img src="img/unit-114.png" alt="114A 평면 및 인테리어" loading="lazy" />
+            </figure>
+            <div class="unit-info">
+              <h3 class="unit-name">114A</h3>
+              <p class="unit-share">총 1,234세대 중 <b>123 세대</b></p>
+              <dl class="unit-meta">
+                <div><dt>전용</dt><dd>114.98㎡</dd></div>
+                <div><dt>공급</dt><dd>149.23㎡</dd></div>
+                <div><dt>계약</dt><dd>216.74㎡</dd></div>
+              </dl>
+              <ul class="unit-points">
+                <li>대형 드레스룸 &amp; 팬트리</li>
+                <li>와이드 주방 — 여유로운 동선</li>
+                <li>넓은 발코니 — 탁 트인 전망</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="unit-panel" data-panel="142">
+            <figure class="unit-image">
+              <img src="img/unit-142.png" alt="142A 평면 및 인테리어" loading="lazy" />
+            </figure>
+            <div class="unit-info">
+              <h3 class="unit-name">142A</h3>
+              <p class="unit-share">총 1,234세대 중 <b>89 세대</b></p>
+              <dl class="unit-meta">
+                <div><dt>전용</dt><dd>142.34㎡</dd></div>
+                <div><dt>공급</dt><dd>185.73㎡</dd></div>
+                <div><dt>계약</dt><dd>265.96㎡</dd></div>
+              </dl>
+              <ul class="unit-points">
+                <li>와이드 4Bay — 개방감 있는 공간</li>
+                <li>대형 드레스룸 — 생활의 편리함</li>
+                <li>다용도실·알파룸 — 다양한 라이프스타일</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. Community -->
+    <section class="snap section-community" id="community" data-section="community" data-num="08" data-label="COMMUNITY">
+      <div class="snap-inner">
+        <header class="section-head">
+          <p class="section-num">08 — COMMUNITY</p>
+          <h2 class="section-title">
+            일상이 <em>특별해지는</em> 커뮤니티.
+          </h2>
+        </header>
+        <div class="community-grid">
+          <article class="comm-card big">
+            <span class="comm-tag">SIGNATURE</span>
+            <h3>SKY LOUNGE</h3>
+            <p>49층 펜트하우스에 자리한 시그니처 라운지. 한강 야경을 그대로 담는 가장 높은 응접실.</p>
+          </article>
+          <article class="comm-card"><h3>FITNESS</h3><p>전문 PT룸 · GX 스튜디오 · 사우나</p></article>
+          <article class="comm-card"><h3>GUEST HOUSE</h3><p>호텔식 게스트 스위트</p></article>
+          <article class="comm-card"><h3>KIDS &amp; LIBRARY</h3><p>독서실 · 키즈존 · 스터디카페</p></article>
+          <article class="comm-card"><h3>SPA &amp; POOL</h3><p>실내 수영장 · 스파 · 에스테틱</p></article>
+          <article class="comm-card"><h3>BUSINESS LOUNGE</h3><p>화상회의실 · 코워킹 · 프라이빗 라운지</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 09. Contact -->
+    <section class="snap section-contact" id="contact" data-section="contact" data-num="09" data-label="CONTACT">
+      <div class="snap-inner contact-inner">
+        <header class="section-head center">
+          <p class="section-num">09 — INQUIRY</p>
+          <h2 class="section-title huge">
+            당신이 선택한 <em>단 하나의</em> 공간.
+          </h2>
+          <p class="section-desc">분양 상담 · 모델하우스 방문 · 자료 요청은 아래에서.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a href="tel:1588-0000" class="contact-card">
+            <span class="ck">CALL</span>
+            <span class="cv">1588-0000</span>
+            <span class="ca">→</span>
+          </a>
+          <a href="#" class="contact-card">
+            <span class="ck">MODEL HOUSE</span>
+            <span class="cv">서울 강동 천호동 123</span>
+            <span class="ca">→</span>
+          </a>
+          <a href="mailto:sales@branew.kr" class="contact-card">
+            <span class="ck">EMAIL</span>
+            <span class="cv">sales@branew.kr</span>
+            <span class="ca">→</span>
+          </a>
+          <a href="branew-brochure.pdf" download class="contact-card">
+            <span class="ck">BROCHURE</span>
+            <span class="cv">PDF 다운로드</span>
+            <span class="ca">↓</span>
+          </a>
+        </div>
+
+        <div class="contact-foot">
+          <span class="footer-logo">BRANEW</span>
+          <p>© 2026 BRANEW. All rights reserved. · A NEW STANDARD OF LIVING</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Brochure -->
+    <section class="snap section-brochure" id="brochure" data-section="brochure" data-num="10" data-label="BROCHURE">
+      <div class="snap-inner brochure-inner">
+        <header class="brochure-head">
+          <p class="section-num">10 — BROCHURE</p>
+          <h2 class="section-title">
+            디지털 <em>브로셔.</em>
+          </h2>
+          <p class="section-desc">
+            BRANEW 분양 안내 PDF를 바로 열람하거나 다운로드할 수 있습니다.
+          </p>
+          <div class="brochure-ctas">
+            <a class="btn btn-primary" href="branew-brochure.pdf" download>PDF 다운로드 ↓</a>
+            <a class="btn btn-line" href="branew-brochure.pdf" target="_blank" rel="noopener">새 창에서 보기 ↗</a>
+          </div>
+          <ul class="brochure-meta">
+            <li><b>FORMAT</b><span>PDF · A4 · 3 pages</span></li>
+            <li><b>SIZE</b><span>약 100 KB</span></li>
+            <li><b>UPDATED</b><span>2026.05</span></li>
+          </ul>
+        </header>
+        <div class="brochure-frame">
+          <iframe class="brochure-pdf"
+                  src="branew-brochure.pdf#view=FitH&toolbar=1"
+                  title="BRANEW 디지털 브로셔"></iframe>
+          <noscript>
+            <a class="brochure-fallback" href="branew-brochure.pdf">PDF 다운로드</a>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" aria-hidden="true"><span id="progressInner"></span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
